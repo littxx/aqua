@@ -17,6 +17,20 @@ const resume = {
     gestureEnabled: false,
   }
 
+
+
+ 
+  const topCinza ={
+    headerStyle: {
+      backgroundColor: '#F6F6F6',
+     
+    },
+   
+    
+  }
+  
+  
+
   const Stack = createStackNavigator()
 
 const Navigate = () =>{
@@ -26,7 +40,7 @@ const Navigate = () =>{
                 <Stack.Screen name="Splash" component={Splash} options={resume}/>
                 <Stack.Screen name="Welcome" component={Welcome} options={resume}/>
                 <Stack.Screen name="Solicitar" component={Solicitar} options={resume}/>
-                <Stack.Screen name="Selecionar" component={Selecionar} />
+                <Stack.Screen name="Selecionar" component={Selecionar} options={topCinza} />
             </Stack.Navigator>
         </NavigationContainer>
     )

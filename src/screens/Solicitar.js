@@ -14,6 +14,7 @@ const Solicitar = () =>{
     return(
         <View style={styles.container}>
             <View style={styles.centerContainer}>
+            
             <Image style={styles.imageContainer} source={require("../assets/img/copinho.png")}/>
             <Text style={styles.textBold}>Vamos personalizar </Text>
             <Text style={styles.textBold}>sua experiência</Text>
@@ -33,7 +34,8 @@ const Solicitar = () =>{
 const styles = StyleSheet.create({
 
     container:{
-        flex:1
+        flex:1,
+        backgroundColor:"white"
     },
 
     centerContainer:{
